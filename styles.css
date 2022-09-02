@@ -1,3 +1,54 @@
-h1 {
-    color:aquamarine;
+* {
+    font-family: 'Roboto', sans-serif;
+    font-size: 100%;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+    display: flex;
+    height:100%;
+}
+
+.left-container {
+    background-image: url("cyberpunk\ image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:auto;
+    width: 50rem;
+}
+
+.right-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+.form {
+    padding: 3rem;
+    /* border-top: 1px solid rgb(212, 212, 212);
+    border-bottom: 1px solid rgb(212, 212, 212); */
+    -webkit-box-shadow: 0px 32px 70px -24px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 32px 70px -24px rgba(0,0,0,0.75);
+    box-shadow: 0px 32px 70px -24px rgba(0,0,0,0.75);
+
+}
+
+.intro-text {
+    margin: 3rem;
+    font-size: 24px;
+    font-weight: bold;
+
+}
+
+.footer {
+    margin: 3rem;
 }
