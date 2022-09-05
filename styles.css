@@ -32,13 +32,12 @@ body {
 
 }
 
-.form {
+.form-box {
     padding: 3rem;
-    /* border-top: 1px solid rgb(212, 212, 212);
-    border-bottom: 1px solid rgb(212, 212, 212); */
-    -webkit-box-shadow: 0px 32px 70px -24px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 32px 70px -24px rgba(0,0,0,0.75);
-    box-shadow: 0px 32px 70px -24px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 10px 54px -17px rgba(0,0,0,0.46);
+    -moz-box-shadow: 0px 10px 54px -17px rgba(0,0,0,0.46);
+    box-shadow: 0px 10px 54px -17px rgba(0,0,0,0.46);
+
 
 }
 
@@ -51,4 +50,49 @@ body {
 
 .footer {
     margin: 3rem;
+}
+
+.action-sentence {
+    font-weight: bold;
+    padding-bottom: 1em;
+    font-size: larger;
+}
+
+.form {
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form-entry {
+    flex: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: flex-start;
+
+}
+
+.form-entry > label {
+    font-size: smaller;
+    padding: 2px 0 2px 0;
+}
+
+.myButton {
+	background-color:#599bb3;
+	border-radius:42px;
+	border:1px solid #29668f;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:15px;
+	padding:11px 18px;
+	text-decoration:none;
+}
+.myButton:hover {
+	background-color:#408c99;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
 }

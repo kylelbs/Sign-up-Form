@@ -25,30 +25,37 @@
                         your deepest dreams. Sign up <em>now</em> to get started.</p>
                     <p>You <em>know</em> you want to.</p>
                 </div>
-                <div class="form">
-                    <p>Let's do this!</p>
-                    <form>
-                        <label for="first_name">First Name</label>
-                        <input type="text">
-
-                        <label for="last_name">Last Name</label>
-                        <input type="text">
-
-                        <label for="email">Email</label>
-                        <input type="text">
-
-                        <label for="phone_number">Phone Number</label>
-                        <input type="text">
-
-                        <label for="password">Password</label>
-                        <input type="text">
-
-                        <label for="confirm_password">Confirm Password</label>
-                        <input type="text">
+                <div class="form-box">
+                    <p class="action-sentence">Let's do this!</p>
+                    <form class="form" id="form" action="" method="post">
+                        <div class="form-entry">
+                            <label for="first_name">First Name</label>
+                            <input type="text" id="first_name" name="first_name">
+                        </div>
+                        <div class="form-entry">
+                            <label for="last_name">Last Name</label>
+                            <input type="text" id="last_name" name="last_name">
+                        </div>
+                        <div class="form-entry">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email">
+                        </div>
+                        <div class="form-entry">
+                            <label for="phoneNumber">Phone Number</label>
+                            <input type="tel" id="phoneNumber" name="phoneNumber">
+                        </div>
+                        <div class="form-entry">
+                            <label for="password">Password</label>
+                            <input type="password" id="password" name="password">
+                        </div>
+                        <div class="form-entry">
+                            <label for="confirmPassword">Confirm Password</label>
+                            <input type="password" id="confirmPassword" name="confirmPassword">
+                        </div>
                     </form>
                 </div>
                 <div class="footer">
-                    <button>Create Account</button>
+                    <button class="myButton" type="submit" form="form">Create Account</button>
                     <p>Already have an account ? <a href="">Log in</a></p>
                 </div>
             </div>
