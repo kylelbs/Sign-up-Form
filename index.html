@@ -27,30 +27,33 @@
                 </div>
                 <div class="form-box">
                     <p class="action-sentence">Let's do this!</p>
-                    <form class="form" id="form" action="" method="post">
+                    <form class="form" id="form" action="http://httpbin.org/post" method="post">
                         <div class="form-entry">
                             <label for="first_name">First Name</label>
-                            <input type="text" id="first_name" name="first_name">
+                            <input type="text" id="first_name" name="first_name" minlength="2" required>
                         </div>
                         <div class="form-entry">
                             <label for="last_name">Last Name</label>
-                            <input type="text" id="last_name" name="last_name">
+                            <input type="text" id="last_name" name="last_name" minlength="2" required>
                         </div>
                         <div class="form-entry">
                             <label for="email">Email</label>
-                            <input type="email" id="email" name="email">
+                            <input type="email" id="email" name="email" required>
                         </div>
                         <div class="form-entry">
                             <label for="phoneNumber">Phone Number</label>
-                            <input type="tel" id="phoneNumber" name="phoneNumber">
+                            <input type="tel" id="phoneNumber" name="phoneNumber"
+                                pattern="^(?:(?:\+|00)33|0)\s*[1-9](?:[\s.-]*\d{2}){4}$"
+                                title="Please enter a valid french phone number, example: 0612131415 or +33678787878"
+                                required>
                         </div>
                         <div class="form-entry">
                             <label for="password">Password</label>
-                            <input type="password" id="password" name="password">
+                            <input type="password" id="password" name="password" minlength="8" required>
                         </div>
                         <div class="form-entry">
                             <label for="confirmPassword">Confirm Password</label>
-                            <input type="password" id="confirmPassword" name="confirmPassword">
+                            <input type="password" id="confirmPassword" name="confirmPassword" required>
                         </div>
                     </form>
                 </div>

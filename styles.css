@@ -96,3 +96,22 @@ body {
 	position:relative;
 	top:1px;
 }
+
+input {
+    outline: none;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+input:invalid {
+  border-color: red;
+}
+
+input:valid {
+  border-color: green;
+}
+
+input:focus {
+    border-color: blue;
+    border-radius: 5px;
+}
